@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.heading{
+	font-size: 7rem;
+	text-align: center;
+	margin: 4.5rem 0;
+    color: white;
+}
+
+.about_container > div {
+    display: none;
+}
+
+.about_container > div.active {
+    display: block;
+}
+
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 100;
+    color: white;
+    margin-left: 6rem;
+}
+
+.wrapper .face {
+    position: relative;
+    width: 80%;
+    height: 75vh;
+}
+
+.wrapper .face.face1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 85px;
+}
+
+.face.face1 h1 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 4.5vw;
+}
+
+.face.face1 p {
+    font-family: "League Script", cursive;
+    font-size: 22px;
+}
+
+.wrapper .face.face2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./Pics/Zahoor\ Ogahi.png") no-repeat right bottom;
+    background-size: contain;
+    margin-left: 5rem;
+    
+}
+
+.face.face1 h1 span,
+.face.face1 p span {
+    display: inline-block;
+}
+
+
+
+.about_nav {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_nav ul {
+    position: relative;
+}
+
+.about_nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.about_nav ul li a {
+    font-size: 25px;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.about_nav ul li a:hover {
+    color: dodgerblue;
+}
+
+.about_nav ul li a.active {
+    color: dodgerblue;
+    box-shadow: inset 5px 5px 10px black, inset -3px -3px 5px #ffffff25;
+}
+
+.about_container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 50vh;
+    width: calc(var(--width) * 3);
+    margin-left: 0;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+
+.about_container.one {
+    margin-left: 0;
+}
+
+.about_container.two {
+    margin-left: calc(var(--width) * -1);
+}
+
+.about_container.three {
+    margin-left: calc(var(--width) * -2);
+}
+
+
+
+.about_nav a.active {
+    font-weight: bold;
+}
+
+.skills {
+    width: 100%;
+    height: 100%;
+    margin-left: 32rem;
+}
+.education {
+    width: 100%;
+    height: 100%;
+    margin-left: 32rem;
+    margin-bottom: 2rem;
+    
+}
+
+.experience {
+    width: 100%;
+    height: 100%;
+    margin-left: 32rem;
+    margin-bottom: 2rem;
+    
+}
+
+.skills {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 59vh;
+    width: 100%;
+    margin-bottom: 4rem;
+    
+    
+}
+
+.skills .skill {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    margin: 22px 50px;
+    height: 28px;
+    border-radius: 10px;
+    transition: 0.25s ease-in-out;
+    margin-bottom: 4rem;
+   
+}
+
+.skill .name {
+    position: absolute;
+    bottom: 100%;
+    font-size: 2rem;
+  
+ 
+}
+
+.skill .value {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    font-size: 2rem;
+    
+}
+
+.skill .percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 20px;
+    border-radius: 100px;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.348), inset 3px 3px 5px rgba(0, 0, 0, 0.359),
+        inset -3px -3px 3px rgba(255, 255, 255, 0.09), inset -3px -3px 5px rgba(255, 255, 255, .09);
+}
+
+.skill .percent .progress {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translate(0%, -50%);
+    height: 10px;
+    width: 90%;
+    background: white;
+    border-radius: 100px;
+}
+
+.middle_line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    width: 5px;
+    height: 100%;
+    background: #333;
+    border-radius: 5px;
+
+
+
+}
+
+.experience{
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    margin-bottom: 4rem;
+    margin-left: 32rem;
+
+}
+
+.education {
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    margin-bottom: 4rem;
+    margin-left: 32rem;
+  
+}
+
+.cover:nth-child(even) {
+    justify-self: start;
+    margin-left: 0rem;
+    
+}
+
+.cover:nth-child(odd) {
+    justify-self: end;
+  
+}
+.cover {
+    position: relative;
+    width: 50%;
+    height: 170px;
+    color: #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: inset 5px 5px 10px black, inset -3px -3px 5px #ffffff25;
+    margin-left: auto;
+    margin-bottom: 4rem;
+    
+}
+
+.cover::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -15px;
+    transform: rotate(135deg);
+    border-left: 15px solid rgba(255, 255, 255, 0.3);
+    border-top: 15px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+}
+
+.cover:nth-child(odd)::before {
+    left: -15px;
+    right: inherit;
+    transform: rotate(-45deg);
+} 
+
+.cover .job_box {
+    position: absolute;
+    top: 18%;
+    right: -75px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: #267ff4;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cover:nth-child(odd) .job_box {
+    position: absolute;
+    top: 20%;
+    left: -75px;
+    right: inherit;
+    font-size: 30px;
+}
+
+.cover:last-child {
+    margin-bottom: 100px;
+}
+
+.cover:nth-child(even) {
+    text-align: right;
+}
+
+.date {
+    color: crimson;
+    font-weight: bold;
+}
+
+.name_company {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text_hidden {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+}
+.text_hidden::-webkit-scrollbar {
+    width: 5px;
+}
+
+@media (max-width: 1024px) {
+    .button {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 582px) {
+    .skills {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 50vh;
+        width: 100%;
+    }
+    .whitespace {
+        display: none;
+    }
+
+    .experience, .education {
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cover {
+        margin-right: 20px;
+    }
+
+    .cover:nth-child(odd) .job_box {
+        position: absolute;
+        top: 40px;
+        left: -25%;
+        right: inherit;
+        font-size: 30px;
+    }
+    .cover:nth-child(even) .job_box {
+        top: 40px;
+        left: -25%;
+        right: inherit;
+        font-size: 30px;
+    }
+    .cover::before {
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: -15px;
+        right: inherit;
+        transform: rotate(314deg);
+        border-left: 15px solid rgba(255, 255, 255, 0.3);
+        border-top: 15px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+
+    .middle_line {
+        left: 28px;
+    }
+
+    .cover:nth-child(even) {
+        justify-self: right;
+    }
+
+    .cover:nth-child(odd) {
+        justify-self: right;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper .face.face2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: .3;
+    }
+}
+
+@media (max-width: 366px) {
+    .cover::before {
+        display: none;
+    }
+    .cover:nth-child(odd) .job_box {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        left: inherit;
+        font-size: 30px;
+    }
+    .cover:nth-child(even) .job_box {
+        top: 40px;
+        left: 30px;
+        right: inherit;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 290px) {
+    .wrapper .face.face1 {
+        padding: 0;
+    }
+    .face.face1 p {
+        font-family: "League Script", cursive;
+        font-size: 22px;
+        text-align: center;
+    }
+}
